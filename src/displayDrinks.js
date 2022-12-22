@@ -11,8 +11,8 @@ function displayDrinks({ drinks }) {
   }
   const drinksList = drinks
     .map((drink) => {
-      const { strDrink: name, idDrinks: id, strDrinkThumb: image } = drink;
-      return `<a href="drink.html">
+      const { strDrink: name, idDrink: id, strDrinkThumb: image } = drink;
+      return `<a href="drink.html?id=${id}">
           <article class="cocktail" data-id="${id}">
             <img src="${image}" alt="${name}" />
             <h3>${name}</h3>
